@@ -1,0 +1,29 @@
+{% extends 'shopping/base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <div class="col-md-8 banner-big">
+		<div class="row">
+			<div class="col-md-8 banner">
+				<img src="{% static 'images/banner1.jpg' %}" alt="banner1" class="img-responsive" />
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 banner">
+				<img src="{% static 'images/banner2.jpg' %}" alt="banner2" class="img-responsive"/>
+			</div>
+			<div class="col-md-4 banner">
+				<img src="{% static 'images/banner3.png' %}" alt="banner3" class="img-responsive"/>
+			</div>
+		</div>
+	</div>
+	
+	<div class="col-md-2">
+		<div class="row">
+		<img src="{% static 'images/banner4.jpg' %}" alt="banner2" class="img-responsive"/>
+		</div>
+		<div class="row">
+		<img src="{% static 'images/banner5.jpg' %}" alt="banner2" class="img-responsive"/>
+		</div>
+	</div>
+{% endblock %}
+

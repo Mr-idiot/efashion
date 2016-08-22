@@ -1,0 +1,30 @@
+{% extends 'shopping/base.html' %}
+{% load staticfiles %}
+{% block content %}
+<style type="text/css">
+	img{
+	float:left;
+	margin :5px 30px 5px 30px;
+	}
+</style>
+<div class="col-md-10">
+	<div class="row">
+		<h1>Garments List </h1>
+	</div>
+	<div class="row">
+		<div class="list">
+				<img src="{% static 'images/garment1.gif' %}" alt="banner3" class="img-responsive"/>	
+				<img src="{% static 'images/garment1.gif' %}" alt="banner3" class="img-responsive"/>
+				<img src="{% static 'images/garment1.gif' %}" alt="banner3" class="img-responsive"/>
+				<img src="{% static 'images/garment1.gif' %}" alt="banner3" class="img-responsive"/>
+		</div>
+	</div>
+	{{ garments }}
+	{% for garment in garments %}
+		{{ garment }}
+	{% endfor %}
+</div>
+	
+</div> 
+
+{% endblock %}
